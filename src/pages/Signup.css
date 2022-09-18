@@ -1,0 +1,47 @@
+.pageWrapper {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.pageFormWrapper {
+  width: 40rem;
+  height: 20rem;
+  margin: 120px auto 0 auto;
+  background-color: #189ab4;
+}
+
+.pageHeading {
+  padding-top: 10px;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+}
+
+.formContainer {
+  width: 30rem;
+  margin: 0 auto;
+}
+
+.inputWrapper {
+  margin-top: 10px;
+}
+
+.formInput {
+  border: none;
+  border-radius: 5px;
+  text-indent: 5px;
+  margin: 10 50;
+  width: 30rem;
+  line-height: 30px;
+}
+
+button {
+  min-width: 80px;
+  line-height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding: 5 10;
+  background-color: #e53904;
+  color: white;
+}
