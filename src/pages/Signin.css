@@ -1,13 +1,24 @@
 .pageWrapper {
   width: 100%;
   min-height: 100vh;
+  background: #010100;
+  margin: 0;
+  padding-top: 150px;
 }
 
 .pageFormWrapper {
+  /* position: absolute; */
+  /* top: 120px; */
   width: 40rem;
-  height: 20rem;
-  margin: 120px auto 0 auto;
-  background-color: #189ab4;
+  height: 30rem;
+  margin: 0 auto;
+  background: none;
+  /* border: #fdb750 solid 1px; */
+}
+
+.logoWrapper {
+  padding-top: 25px;
+  text-align: center;
 }
 
 .pageHeading {
@@ -24,7 +35,7 @@
 }
 
 .inputWrapper {
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .formInput {
@@ -33,15 +44,25 @@
   text-indent: 5px;
   margin: 10 50;
   width: 30rem;
-  line-height: 30px;
+  line-height: 40px;
+  font-size: 20px;
 }
 
 button {
-  min-width: 80px;
-  line-height: 30px;
+  min-width: 100px;
+  line-height: 40px;
   border: none;
   border-radius: 3px;
-  padding: 5 10;
-  background-color: #e53904;
+  /* padding: 5 10; */
+  background-color: #fc2e20;
   color: white;
+  font-size: 20px;
+}
+
+.signupLinkWrapper {
+  font-size: 15px;
+  margin-top: 10px;
+  color: #fdb750;
+  line-height: 20px;
+  text-decoration: none;
 }

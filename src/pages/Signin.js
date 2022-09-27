@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import './Signin.css';
 import { signin, authenticate } from '../apis/auth';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
+import durbarlogo from '../images/durbar-logo.png';
+
+import TextField from '@mui/material/TextField';
 
 function Signin() {
   const [values, setValues] = useState({
@@ -46,7 +49,10 @@ function Signin() {
   return (
     <div className="pageWrapper">
       <div className="pageFormWrapper">
-        <div className="pageHeading">Signin</div>
+        <div className="logoWrapper">
+          <img src={durbarlogo} alt="logo" width={100} height={100} />
+        </div>
+        <div className="pageHeading">Members Signin</div>
         <div className="formContainer">
           <div className="inputWrapper">
             <input
@@ -64,9 +70,15 @@ function Signin() {
               onChange={handleChange('password')}
             />
           </div>
-          <button className="inputWrapper" onClick={(e) => submitForm(e)}>
-            Signin
-          </button>
+          <div>
+            <Link to="/signup">
+              <div className="signupLinkWrapper">
+                Not a member? Signup to be a member.
+              </div>
+            </Link>
+          </div>
+          <br />
+          <button onClick={(e) => submitForm(e)}>Signin</button>
         </div>
       </div>
     </div>

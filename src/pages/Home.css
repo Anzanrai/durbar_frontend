@@ -1,0 +1,46 @@
+.main-section {
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  background: url('../images/momo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.nav-wrapper {
+  padding-top: 30px;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.logo-wrapper {
+  width: 20%;
+}
+
+.link-wrapper {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-item {
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 60px;
+}
+
+.main-nav-wrapper {
+  width: 30%;
+  margin: 300px auto 200px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-link-item {
+  font-size: 35px;
+  text-decoration: none;
+  color: white;
+}
