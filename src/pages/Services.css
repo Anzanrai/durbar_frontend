@@ -2,13 +2,14 @@
   width: 100%;
   min-height: 100vh;
   background: #010100;
+  filter: opacity(0.9);
   margin: 0;
 }
 
 .services-content-wrapper {
   width: 700px;
   min-height: 400px;
-  margin: 120px auto;
+  margin: 120px auto 0 auto;
 }
 
 .services-content h2 {
