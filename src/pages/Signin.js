@@ -3,6 +3,7 @@ import './Signin.css';
 import { signin, authenticate } from '../apis/auth';
 import { useNavigate, Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import durbarlogo from '../images/durbar-logo.png';
 
 import TextField from '@mui/material/TextField';
@@ -41,7 +42,7 @@ function Signin() {
             password: '',
             redirect: true,
           });
-          navigate('/');
+          navigate('/user/dashboard');
         });
       }
     });
@@ -81,6 +82,7 @@ function Signin() {
           <button onClick={(e) => submitForm(e)}>Signin</button>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
