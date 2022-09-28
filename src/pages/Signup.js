@@ -3,6 +3,7 @@ import './Signup.css';
 import { signup } from '../apis/auth';
 import Navbar from '../components/Navbar';
 import durbarlogo from '../images/durbar-logo.png';
+import Footer from '../components/Footer';
 
 function Signup() {
   const [values, setValues] = useState({
@@ -78,6 +79,7 @@ function Signup() {
           </button>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

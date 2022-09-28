@@ -8,7 +8,7 @@
 .contact-content-wrapper {
   width: 700px;
   min-height: 400px;
-  margin: 120px auto;
+  margin: 120px auto 0 auto;
 }
 
 .contact-content h2 {
