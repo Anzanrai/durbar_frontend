@@ -4,3 +4,22 @@
   background: #010100;
   margin: 0;
 }
+
+.contact-content-wrapper {
+  width: 700px;
+  min-height: 400px;
+  margin: 120px auto;
+}
+
+.contact-content h2 {
+  color: #fd7f20;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.contact-content p {
+  color: #fdb750;
+  font-size: 24px;
+  text-align: center;
+}
