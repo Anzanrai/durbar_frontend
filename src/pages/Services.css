@@ -1,0 +1,24 @@
+.pageWrapper {
+  width: 100%;
+  min-height: 100vh;
+  background: #010100;
+  margin: 0;
+}
+
+.services-content-wrapper {
+  width: 700px;
+  min-height: 400px;
+  margin: 120px auto;
+}
+
+.services-content h2 {
+  color: #fd7f20;
+  font-size: 36px;
+  text-align: center;
+}
+
+.services-content p {
+  color: #fdb750;
+  font-size: 24px;
+  text-align: center;
+}

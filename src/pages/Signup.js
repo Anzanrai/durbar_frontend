@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Signup.css';
 import { signup } from '../apis/auth';
+import Navbar from '../components/Navbar';
 import durbarlogo from '../images/durbar-logo.png';
 
 function Signup() {
@@ -41,6 +42,7 @@ function Signup() {
 
   return (
     <div className="pageWrapper">
+      <Navbar />
       <div className="pageFormWrapper">
         <div className="logoWrapper">
           <img src={durbarlogo} alt="logo" width={100} height={100} />
