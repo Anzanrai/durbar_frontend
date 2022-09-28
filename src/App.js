@@ -5,6 +5,8 @@ import Signup from './pages/Signup';
 import Signin from './pages/Signin';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
+import Dashboard from './pages/Dashboard';
+import PrivateRoute from './components/PrivateRoute';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
@@ -43,6 +45,14 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="signup" element={<Signup />} />
             <Route path="signin" element={<Signin />} />
+            <Route
+              path="user/dashboard"
+              element={
+                <PrivateRoute>
+                  <Dashboard />
+                </PrivateRoute>
+              }
+            />
           </Route>
         </Routes>
       </BrowserRouter>
