@@ -1,0 +1,27 @@
+.header-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.image-wrapper {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.image-container {
+  width: 80px;
+  height: 80px;
+}
+
+.header-content {
+  margin-top: 50px;
+  color: #fc2e20;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}

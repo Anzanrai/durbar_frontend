@@ -6,8 +6,6 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import durbarlogo from '../images/durbar-logo.png';
 
-import TextField from '@mui/material/TextField';
-
 function Signin() {
   const [values, setValues] = useState({
     username: '',
@@ -42,7 +40,11 @@ function Signin() {
             password: '',
             redirect: true,
           });
-          navigate('/user/dashboard');
+          if (data.roles.includes('ROLE_ADMIN')) {
+            navigate('/admin/dashboard');
+          } else {
+            navigate('/user/dashboard');
+          }
         });
       }
     });

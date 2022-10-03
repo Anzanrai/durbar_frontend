@@ -1,0 +1,36 @@
+.admin-dashboard-container {
+  width: 80%;
+  padding-top: 50px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.action-container {
+  width: 300px;
+  /* min-height: 100px; */
+}
+
+.action-container ul {
+  list-style: none;
+}
+
+.action-container ul li {
+  display: block;
+  color: white;
+  padding: 20px;
+  border-bottom: rgba(256, 256, 256, 0.8) solid 1px;
+  cursor: pointer;
+  /* line-height: 30px; */
+}
+
+.action-container ul li:hover {
+  background: #fdb750;
+  filter: opacity(1);
+}
+
+.action-link-style {
+  text-decoration: none;
+  color: white;
+}

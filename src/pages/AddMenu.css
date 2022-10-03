@@ -1,0 +1,93 @@
+.button-wrapper {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  min-width: 150px;
+  height: 50px;
+  line-height: 30px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  background: #fdb750;
+  color: black;
+}
+
+.content-wrapper {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #fdb750;
+}
+
+.dish-type-wrapper {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-inline: auto;
+  justify-content: space-between;
+}
+
+.dish-type-container {
+  margin-top: 20px;
+  font-size: 20px;
+  min-width: 250px;
+  /* min-height: 400px; */
+  line-height: 40px;
+  /* color: #fd7f20; */
+  color: black;
+  padding: 5px 10px;
+  margin-right: 10px;
+  display: block;
+  background: white;
+}
+
+.item-wrapper {
+  display: block;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+.item-wrapper:hover {
+  background: #fd7f20;
+  cursor: pointer;
+}
+
+.modal-wrapper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.menuform-wrapper {
+  width: 34rem;
+  height: 20rem;
+  margin: 200px auto;
+  background: white;
+  border-radius: 10px;
+  z-index: 3;
+}
+
+.form-input-wrapper {
+  padding: 15px 20px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

@@ -54,6 +54,20 @@ export const isAuthenticated = () => {
   }
 };
 
+export const isAdmin = () => {
+  if (typeof window == 'undefined') {
+    return false;
+  }
+  if (localStorage.getItem('jwt')) {
+    if (
+      JSON.parse(localStorage.getItem('jwt'))['roles'].includes('ROLE_ADMIN')
+    ) {
+      return true;
+    }
+    return false;
+  }
+};
+
 export const logout = () => {
   localStorage.removeItem('jwt');
 };

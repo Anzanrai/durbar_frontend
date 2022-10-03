@@ -6,8 +6,13 @@ import Signin from './pages/Signin';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
 import Dashboard from './pages/Dashboard';
+import AdminDashboard from './pages/AdminDashboard';
 import PrivateRoute from './components/PrivateRoute';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import AdminRoute from './components/AdminRoute';
+import AddMenu from './pages/AddMenu';
+import AddStaff from './pages/AddStaff';
+import AdminProfileUpdate from './pages/AdminProfileUpdate';
 
 const theme = createTheme({
   palette: {
@@ -50,6 +55,46 @@ function App() {
               element={
                 <PrivateRoute>
                   <Dashboard />
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="admin/dashboard"
+              element={
+                <PrivateRoute>
+                  <AdminRoute>
+                    <AdminDashboard />
+                  </AdminRoute>
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="admin/add-menu"
+              element={
+                <PrivateRoute>
+                  <AdminRoute>
+                    <AddMenu />
+                  </AdminRoute>
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="admin/add-staff"
+              element={
+                <PrivateRoute>
+                  <AdminRoute>
+                    <AddStaff />
+                  </AdminRoute>
+                </PrivateRoute>
+              }
+            />
+            <Route
+              path="admin/profile-update"
+              element={
+                <PrivateRoute>
+                  <AdminRoute>
+                    <AdminProfileUpdate />
+                  </AdminRoute>
                 </PrivateRoute>
               }
             />
