@@ -6,7 +6,7 @@ function AdminpageHeader() {
   return (
     <div className="header-wrapper">
       <div className="image-wrapper">
-        <img className="image-container" src={logo} />
+        <img className="image-container" src={logo} alt="logo" />
       </div>
       <div className="header-content">Admin Dashboard</div>
     </div>

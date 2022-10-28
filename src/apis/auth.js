@@ -14,7 +14,7 @@ export const signup = (user) => {
       return success.json();
     })
     .catch((err) => {
-      return err;
+      throw err;
     });
 };
 

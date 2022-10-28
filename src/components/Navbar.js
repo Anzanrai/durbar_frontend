@@ -1,10 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 import durbarlogo from '../images/durbar-logo.png';
 
 function Navbar() {
+  let isAuthenticated = useState(!!localStorage.getItem('jwt') ? true : false);
+  // useEffect(() => {
+  //   if (localStorage.getItem('jwt')) {
+  //     isAuthenticated = true;
+  //   }
+  // }, []);
+  const renderMembers = () => {
+    if (localStorage.getItem('jwt')) {
+      return (
+        <Link to="/" className="link-item" onClick={signout}>
+          Signout
+        </Link>
+      );
+    }
+    return (
+      <Link to="/signin" className="link-item">
+        Members
+      </Link>
+    );
+  };
+  const signout = () => {
+    localStorage.removeItem('jwt');
+  };
+
   return (
     <div>
       <div className="nav-wrapper">
@@ -27,9 +51,7 @@ function Navbar() {
           <Link to="/contact" className="link-item">
             Contact
           </Link>
-          <Link to="/signin" className="link-item">
-            Members
-          </Link>
+          {renderMembers()}
         </div>
       </div>
     </div>

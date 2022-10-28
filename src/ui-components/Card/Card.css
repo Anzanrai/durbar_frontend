@@ -1,0 +1,34 @@
+.dish-type-wrapper {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-inline: auto;
+  justify-content: space-between;
+}
+
+.dish-type-container {
+  margin-top: 20px;
+  font-size: 20px;
+  min-width: 250px;
+  /* min-height: 400px; */
+  line-height: 40px;
+  /* color: #fd7f20; */
+  color: black;
+  padding: 5px 10px;
+  margin-right: 10px;
+  display: block;
+  background: white;
+}
+
+.item-wrapper {
+  display: block;
+  padding-left: 20px;
+  font-size: 15px;
+}
+
+.item-wrapper:hover {
+  background: #fd7f20;
+  cursor: pointer;
+}
