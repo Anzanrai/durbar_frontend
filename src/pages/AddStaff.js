@@ -8,6 +8,10 @@ import CloseIcon from '@mui/icons-material/Close';
 import Input from '../ui-components/input/Input';
 import Toast from '../ui-components/Toast';
 import { useCreateStaffMutation, useGetAllStaffQuery } from '../services/user';
+import DeleteIcon from '@mui/icons-material/Delete';
+import EditIcon from '@mui/icons-material/Edit';
+import profile_pic from '../images/profile-pic.png';
+import StackItem from '../ui-components/StackItem';
 
 function AddStaff() {
   const [showModal, setShowModal] = useState(false);
@@ -134,6 +138,21 @@ function AddStaff() {
   const [createStaff, result] = useCreateStaffMutation();
   const { data, error, isLoading } = useGetAllStaffQuery();
 
+  const renderStackItem = (staff) => {
+    return (
+      <div className="stack-item">
+        <div className="stack-image-wrapper">
+          <img src={profile_pic} alt="profile_pic" className="display-pic" />
+        </div>
+        <div>{staff.username}</div>
+        <div className="icon-wrappers">
+          <EditIcon />
+          <DeleteIcon />
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="page-wrapper">
       <AdminpageHeader />
@@ -160,7 +179,7 @@ function AddStaff() {
             <>Loading...</>
           ) : data ? (
             data.data.map((staff) => {
-              return <div>{staff.username}</div>;
+              return <StackItem>{renderStackItem(staff)}</StackItem>;
             })
           ) : null}
         </div>
